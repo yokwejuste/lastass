@@ -1,23 +1,27 @@
 {% load static %}
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Bootstrap News Template - Free HTML Templates</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Bootstrap News Template - Free HTML Templates" name="keywords">
+        <meta content="Bootstrap News Template - Free HTML Templates" name="description">
+
         <!-- Favicon -->
-        <link href="{% static 'img/logo.png}" rel="icon">
+        <link href="img/favicon.ico" rel="icon">
 
         <!-- Google Fonts -->
-        <link href="{% static 'css/google.css'%}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet"> 
 
         <!-- CSS Libraries -->
-        <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
-        <link href="{% static 'css/all.min.css'%}" rel="stylesheet">
-        <link href="{% static 'lib/slick/slick.css'%}" rel="stylesheet">
-        <link href="{% static 'lib/slick/slick-theme.css'%}" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="{% static '/lib/slick/slick.css' %}" rel="stylesheet">
+        <link href="{% static '/lib/slick/slick-theme.css' %}" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="{% static 'css/style.css'%}" rel="stylesheet">
+        <link href="{% static '/css/style.css' %}" rel="stylesheet">
     </head>
 
     <body>
@@ -27,7 +31,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="tb-contact">
-                            <p><i class="fas fa-envelope"></i>info@mail.com</p>
+                            <p><i class="fas fa-envelope"></i>newroom@mail.com</p>
                             <p><i class="fas fa-phone-alt"></i>+012 345 6789</p>
                         </div>
                     </div>
@@ -51,14 +55,14 @@
                     <div class="col-lg-3 col-md-4">
                         <div class="b-logo">
                             <a href="index.html">
-                                <img src="img/logo.png" alt="Logo">
+                                <img src="{% static '/img/logo.png'%}" alt="Logo">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-4">
                         <div class="b-ads">
                             <a href="https://htmlcodex.com">
-                                <img src="img/ads-1.jpg" alt="Ads">
+                                <img src="{% static '/img/ads-1.jpg' %}" alt="Ads">
                             </a>
                         </div>
                     </div>
@@ -86,13 +90,13 @@
                         <div class="navbar-nav mr-auto">
                             <a href="index.html" class="nav-item nav-link active">Home</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Entertainment</a>
                                 <div class="dropdown-menu">
-                                    <a href="#" class="dropdown-item">Sub Item 1</a>
-                                    <a href="#" class="dropdown-item">Sub Item 2</a>
+                                    <a href="#" class="dropdown-item">Sports</a>
+                                    <a href="#" class="dropdown-item">Music</a>
                                 </div>
                             </div>
-                            <a href="single-page.html" class="nav-item nav-link">Single Page</a>
+                            <a href="single-page.html" class="nav-item nav-link">Home</a>
                             <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                         </div>
                         <div class="social ml-auto">
@@ -116,7 +120,7 @@
                         <div class="row tn-slider">
                             <div class="col-md-6">
                                 <div class="tn-img">
-                                    <img src="{% static 'img/news-450x350-1.jpg'%}" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
                                     </div>
@@ -124,7 +128,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="tn-img">
-                                    <img src="{% static 'img/news-450x350-2.jpg'%}" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="tn-title">
                                         <a  href="">Integer hendrerit elit eget purus sodales maximus</a>
                                     </div>
@@ -136,7 +140,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="tn-img">
-                                    <img src="{% static 'img/news-350x223-1.jpg'%}" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -144,7 +148,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="tn-img">
-                                    <img src="{% static 'img/news-350x223-2.jpg'%}" />
+                                    <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -152,7 +156,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="tn-img">
-                                    <img src="{% static 'img/news-350x223-3.jpg'%}" />
+                                    <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -160,7 +164,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="tn-img">
-                                    <img src="{% static 'img/news-350x223-4.jpg'%}" />
+                                    <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -182,7 +186,7 @@
                         <div class="row cn-slider">
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-1.jpg" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -190,7 +194,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-2.jpg" />
+                                    <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -198,7 +202,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-3.jpg" />
+                                    <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -211,7 +215,7 @@
                         <div class="row cn-slider">
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-4.jpg" />
+                                    <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -219,7 +223,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-5.jpg" />
+                                    <img src="{% static '/img/news-350x223-5.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -227,7 +231,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-1.jpg" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -249,7 +253,7 @@
                         <div class="row cn-slider">
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-5.jpg" />
+                                    <img src="{% static '/img/news-350x223-5.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -257,7 +261,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-4.jpg" />
+                                    <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -265,7 +269,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-3.jpg" />
+                                    <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -278,7 +282,7 @@
                         <div class="row cn-slider">
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-2.jpg" />
+                                    <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -286,7 +290,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-1.jpg" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -294,7 +298,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-3.jpg" />
+                                    <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -328,7 +332,7 @@
                             <div id="featured" class="container tab-pane active">
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-1.jpg" />
+                                        <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -336,7 +340,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-2.jpg" />
+                                        <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -344,7 +348,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-3.jpg" />
+                                        <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -354,7 +358,7 @@
                             <div id="popular" class="container tab-pane fade">
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-4.jpg" />
+                                        <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -362,7 +366,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-5.jpg" />
+                                        <img src="{% static '/img/news-350x223-5.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -370,7 +374,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-1.jpg" />
+                                        <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -380,7 +384,7 @@
                             <div id="latest" class="container tab-pane fade">
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-2.jpg" />
+                                        <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -388,7 +392,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-3.jpg" />
+                                        <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -396,7 +400,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-4.jpg" />
+                                        <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -423,7 +427,7 @@
                             <div id="m-viewed" class="container tab-pane active">
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-5.jpg" />
+                                        <img src="{% static '/img/news-350x223-5.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -431,7 +435,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-4.jpg" />
+                                        <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -439,7 +443,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-3.jpg" />
+                                        <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -449,7 +453,7 @@
                             <div id="m-read" class="container tab-pane fade">
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-2.jpg" />
+                                        <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -457,7 +461,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-1.jpg" />
+                                        <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -465,7 +469,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-3.jpg" />
+                                        <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -475,7 +479,7 @@
                             <div id="m-recent" class="container tab-pane fade">
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-4.jpg" />
+                                        <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -483,7 +487,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-5.jpg" />
+                                        <img src="{% static '/img/news-350x223-5.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -491,7 +495,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-1.jpg" />
+                                        <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -513,7 +517,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-1.jpg" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -521,7 +525,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-2.jpg" />
+                                    <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -529,7 +533,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-3.jpg" />
+                                    <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -537,7 +541,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-4.jpg" />
+                                    <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -545,7 +549,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-5.jpg" />
+                                    <img src="{% static '/img/news-350x223-5.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -553,7 +557,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-1.jpg" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -561,7 +565,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-2.jpg" />
+                                    <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -569,7 +573,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-3.jpg" />
+                                    <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -577,7 +581,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-4.jpg" />
+                                    <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -710,12 +714,12 @@
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
         <!-- JavaScript Libraries -->
-        <script src="{% static 'js/jquery-3.4.1.min.js'%}"></script>
-        <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
-        <script src="{% static 'lib/easing/easing.min.js'%}"></script>
-        <script src="{% static 'lib/slick/slick.min.js'%}"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static '/lib/easing/easing.min.js' %}"></script>
+        <script src="{% static '/lib/slick/slick.min.js' %}"></script>
 
         <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <script src="{% static '/js/main.js' %}"></script>
     </body>
 </html>
