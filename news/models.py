@@ -11,6 +11,7 @@ class User(models.Model):
 
 class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+    image = models.FileField(upload_to='images/', null=True)
     title = models.CharField(max_length=500)
     views = models.IntegerField()
     reactions = models.IntegerField()
