@@ -1,25 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        body{
-            background-color: antiquewhite;
-            width: 90%;
-        }
-        p{
-            margin-left: 2%;
-            width: 60%;
-            text-align: left;
-        }
+{% extends 'base.html' %}
+{% load static %}
 
-    </style>
-</head>
-<body>
+{% block content %}
 <div class="about"><br>
     <center><h1>About Page</h1>
         <hr style="width: 200px;"></center>
@@ -34,6 +16,4 @@
 
             </p></center> 
     
-</div>
-</body>
-</html>
+{% endblock %}
