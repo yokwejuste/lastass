@@ -7,6 +7,17 @@
                 <div class="row">
                     <div class="col-md-6 tn-left">
                         <div class="row tn-slider">
+                            {% for post in posts %}
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="{{ post.image.url }}" />
+                                    <div class="tn-title">
+                                        <a href="">{{post.body}}</a>
+                                    </div>
+                                    <div class="title">Title: {{post.title}}</div>
+                                </div>
+                            </div>
+                            {% endfor %}
                             <div class="col-md-6">
                                 <div class="tn-img">
                                     <img src="{% static '/img/news-350x223-1.jpg' %}" />

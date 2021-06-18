@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,58 +32,6 @@
   </head>
 
   <body>
-    <!-- Top Bar Start -->
-    <div class="top-bar">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="tb-contact">
-              <p><i class="fas fa-envelope"></i>{{request.user}}</p>
-              <p><i class="fas fa-phone-alt"></i>+012 345 6789</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="tb-menu">
-              <a href="">About</a>
-              <a href="">Privacy</a>
-              <a href="">Terms</a>
-              <a href="">Contact</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Top Bar Start -->
-
-    <!-- Brand Start -->
-    <div class="brand">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-3 col-md-4">
-            <div class="b-logo">
-              <a href="{% url 'news:index' %}">
-                <img src="{% static '/img/logo.png'%}" alt="Logo" />
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-4">
-            <div class="b-ads">
-              <a href="https://htmlcodex.com">
-                <img src="{% static '/img/ads-1.jpg' %}" alt="Ads" />
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="b-search">
-              <input type="text" placeholder="Search" />
-              <button><i class="fa fa-search"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Brand End -->
-
     <!-- Nav Bar Start -->
     <div class="nav-bar">
       <div class="container">
@@ -131,64 +80,37 @@
     </div>
     <!-- Nav Bar End -->
 
-    {% block content %} {% endblock %}
+    <div class="about">
+      <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-group">{{form.username.label}} {{form.username}}</div>
+        <div class="form-group">{{form.email.label}} {{form.email}}</div>
+        <div class="form-group">
+          {{form.password1.label}} {{form.password1}}
+        </div>
+        <div class="form-group">
+          {{form.password2.label}} {{form.password2}}
+        </div>
+        <div class="error-field">
+            <p class="error">{{error}}</p>
+        </div>
 
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
     <!-- Footer Start -->
     <div class="footer">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6">
-            <div class="footer-widget">
-              <h3 class="title">Get in Touch</h3>
-              <div class="contact-info">
-                <p><i class="fa fa-map-marker"></i>123 News Street, NY, USA</p>
-                <p><i class="fa fa-envelope"></i>info@example.com</p>
-                <p><i class="fa fa-phone"></i>+123-456-7890</p>
-                <div class="social">
-                  <a href=""><i class="fab fa-twitter"></i></a>
-                  <a href=""><i class="fab fa-facebook-f"></i></a>
-                  <a href=""><i class="fab fa-linkedin-in"></i></a>
-                  <a href=""><i class="fab fa-instagram"></i></a>
-                  <a href=""><i class="fab fa-youtube"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-widget">
-              <h3 class="title">Useful Links</h3>
-              <ul>
-                <li><a href="#">Lorem ipsum</a></li>
-                <li><a href="#">Pellentesque</a></li>
-                <li><a href="#">Aenean vulputate</a></li>
-                <li><a href="#">Vestibulum sit amet</a></li>
-                <li><a href="#">Nam dignissim</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-widget">
-              <h3 class="title">Quick Links</h3>
-              <ul>
-                <li><a href="#">Lorem ipsum</a></li>
-                <li><a href="#">Pellentesque</a></li>
-                <li><a href="#">Aenean vulputate</a></li>
-                <li><a href="#">Vestibulum sit amet</a></li>
-                <li><a href="#">Nam dignissim</a></li>
-              </ul>
-            </div>
+            <div class="footer-widget"></div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-widget">
               <h3 class="title">Newsletter</h3>
               <div class="newsletter">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vivamus sed porta dui. Class aptent taciti sociosqu
-                </p>
+                <p>Subscribe to our newsletter</p>
                 <form>
                   <input
                     class="form-control"
